@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'NewsAggregator.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'railway',
         'USER': 'postgres',
         'PASSWORD': 'g*FG-6F4Aa6d*e4EAcAeFfc-aa5gbD34',
