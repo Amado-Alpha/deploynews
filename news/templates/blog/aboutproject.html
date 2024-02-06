@@ -1,0 +1,120 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <!-- News With Sidebar Start -->
+    <div class="container-fluid py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- News Detail Start -->
+                    <div class="position-relative mb-3">
+                        <!-- <img class="img-fluid w-100" src="img/news-700x435-2.jpg" style="object-fit: cover;"> -->
+                        <div class="overlay position-relative bg-light">
+                            <div class="mb-3">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span>{{ current_time|date:"l, F d, Y" }}</span>
+                            </div>
+                            <div>
+                                <h3 class="mb-3">News aggregator platform </h3>
+                                <p>First things first!. In a nutshell 
+                                    A news aggregator platform is a service or application that collects and curates news content
+                                    from various sources across the internet and presents it in a centralized location for users. 
+                                    These platforms use algorithms to gather articles, headlines, and other news-related content 
+                                    from multiple websites, blogs, and news outlets. The goal is to provide users with a conveni
+                                    ent way to access and stay updated on a wide range of news topics without having to visit mu
+                                    ltiple websites individually.</p>
+
+                                <p>So this projects does the same, but specifically for functionality demonstration purpose, i have just
+                                   used one site, the popular USA's news platform <a href="https://www.theonion.com/">The Onion</a> as 
+                                   my platform data source,but this project can be adapted to include multiple news sites.
+                                </p>
+
+                                <p>
+                                    Technology behind:-
+                                    The project utilises the powerful user agent for web crawling called googlebot, and beautiful soup for pulling
+                                    data out of HTML and XML files. 
+                                    The project also uses celery tasks and beat to improve users experience by performing scheduled web scraping without 
+                                    users interaction, this means that even if a user does'nt search for new updates, the site has the capab
+                                    ility of doing that for him in specified time intervals.
+ 
+                                    Finally the project as whole is maily built using django.
+ 
+                                    Thank you a lot! for taking your time to have a loot at my work. Visit <a href="{% url 'contact' %}">contacts tab</a> if you would like to get 
+                                    in touch, I would really appreciate that.
+                                </p>
+
+                                <p>
+                                    <b>NB:</b> <i>Not all links are active, this project focuses on exploring web scrapping and celery.</i>
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col-lg-4 pt-3 pt-lg-0">
+                    <!-- Social Follow Start -->
+                    <div class="pb-3">
+                        <div class="bg-light py-2 px-4 mb-3">
+                            <h3 class="m-0">Follow Us</h3>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2" style="background: #39569E;">
+                                <small class="fab fa-facebook-f mr-2"></small><small>12,345 Fans</small>
+                            </a>
+                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ml-2" style="background: #52AAF4;">
+                                <small class="fab fa-twitter mr-2"></small><small>12,345 Followers</small>
+                            </a>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2" style="background: #0185AE;">
+                                <small class="fab fa-linkedin-in mr-2"></small><small>12,345 Connects</small>
+                            </a>
+                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ml-2" style="background: #C8359D;">
+                                <small class="fab fa-instagram mr-2"></small><small>12,345 Followers</small>
+                            </a>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2" style="background: #DC472E;">
+                                <small class="fab fa-youtube mr-2"></small><small>12,345 Subscribers</small>
+                            </a>
+                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ml-2" style="background: #1AB7EA;">
+                                <small class="fab fa-vimeo-v mr-2"></small><small>12,345 Followers</small>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Social Follow End -->
+
+                    <!-- Newsletter Start -->
+                    <div class="pb-3">
+                        <div class="bg-light py-2 px-4 mb-3">
+                            <h3 class="m-0">Newsletter</h3>
+                        </div>
+                        <div class="bg-light text-center p-4 mb-3">
+                            <p>Aliqu justo et labore at eirmod justo sea erat diam dolor diam vero kasd</p>
+                            <div class="input-group" style="width: 100%;">
+                                <input type="text" class="form-control form-control-lg" placeholder="Your Email">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary">Sign Up</button>
+                                </div>
+                            </div>
+                            <small>Sit eirmod nonumy kasd eirmod</small>
+                        </div>
+                    </div>
+                    <!-- Newsletter End -->
+
+                    <!-- Ads Start -->
+                    <div class="mb-3 pb-3">
+                        <a href=""><img class="img-fluid" src="img/news-500x280-4.jpg" alt=""></a>
+                    </div>
+                    <!-- Ads End -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- News With Sidebar End -->
+{% endblock %}
