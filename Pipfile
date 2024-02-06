@@ -24,6 +24,7 @@ django-celery-results = "*"
 django-celery-beat = "*"
 celery = "*"
 psycopg2 = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
