@@ -24,7 +24,7 @@ TEMPLATE_DIR=os.path.join(BASE_DIR,'news/templates/news').replace('\\','/')
 SECRET_KEY = 'xe4hmfwal+58e7@8u@&g^x2xsow_hyv7%m3wmk^o4u(%+!73cw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['.vercel.app', 'now.sh', '127.0.0.1', 'localhost', '192.168.61.225']
 
@@ -80,16 +80,23 @@ WSGI_APPLICATION = 'NewsAggregator.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': 'g*FG-6F4Aa6d*e4EAcAeFfc-aa5gbD34',
-        'HOST': 'viaduct.proxy.rlwy.net',
-        'PORT': '16622',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'railway',
+#         'USER': 'postgres',
+#         'PASSWORD': 'aCFd*12cED3gAECeEb**FgBBg-dBCCdG',
+#         'HOST': 'viaduct.proxy.rlwy.net',
+#         'PORT': '11441',
+#     }
+# }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 
 
 # Password validation
