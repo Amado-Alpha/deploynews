@@ -80,16 +80,16 @@ WSGI_APPLICATION = 'NewsAggregator.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'railway',
-#         'USER': 'postgres',
-#         'PASSWORD': 'aCFd*12cED3gAECeEb**FgBBg-dBCCdG',
-#         'HOST': 'viaduct.proxy.rlwy.net',
-#         'PORT': '11441',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'aCFd*12cED3gAECeEb**FgBBg-dBCCdG',
+        'HOST': 'viaduct.proxy.rlwy.net',
+        'PORT': '11441',
+    }
+}
 
 # DATABASES = {
 #     'default': {
